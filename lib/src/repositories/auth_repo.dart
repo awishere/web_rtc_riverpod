@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../constants/app_config.dart';
+import '../providers/app_config_provider.dart';
 
 abstract class IAuthRepository {
   Future<User?> signIn(String email, String pass);
