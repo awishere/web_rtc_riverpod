@@ -72,8 +72,6 @@ class LoginPage extends ConsumerWidget {
               const SizedBox(height: 24.0),
               ElevatedButton(
                 onPressed: () async {
-                  // TODO: Implement sign in functionality
-
                   await authViewModel.login(email.text, password.text);
                 },
                 style: ElevatedButton.styleFrom(
@@ -105,7 +103,6 @@ class LoginPage extends ConsumerWidget {
                   ),
                   TextButton(
                     onPressed: () {
-                      // TODO: Navigate to sign up page
                       authViewModel.navigateToRegistration();
                     },
                     child: const Text(

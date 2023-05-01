@@ -7,7 +7,7 @@ import 'auth_state_provider.dart';
 
 final authViewModelProvider = ChangeNotifierProvider((ref) {
   final authRepo = ref.watch(authRepositoryProvider);
-  final authState = ref.watch(authStateProvider);
+  final authState = ref.watch(authStateNotifierProvider.notifier);
   final goRouter = ref.watch(goRouterProvider);
 
   return AuthViewModel(

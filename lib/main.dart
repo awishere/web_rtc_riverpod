@@ -28,34 +28,3 @@ class MyApp extends ConsumerWidget {
     );
   }
 }
-
-class HomePage extends StatelessWidget {
-  final VoidCallback onLogoutPressed; // Callback function for logout button
-
-  HomePage({required this.onLogoutPressed}); // Constructor
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Page'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Welcome to Home Page!',
-              style: TextStyle(fontSize: 24.0),
-            ),
-            SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: onLogoutPressed, // Logout button callback
-              child: Text('Logout'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
